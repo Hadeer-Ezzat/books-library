@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="books-subject">
+        <h3>Subject: Finance</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12" *ngFor="let book of books">
+            <div class="book-card">
+                <div class="d-flex align-items-center">
+                    <div class="card-image">
+                        <img alt="cover" 
+                        src="https://covers.openlibrary.org/b/ID/{{book.work.cover_id}}-M.jpg" 
+                        class="img-fluid book-cover">
+                    </div>
+                    <div class="card-content">
+                        <h4><span>Published In:</span> {{book.work.first_publish_year}}</h4>
+                        <h4><span>Title:</span> {{book.work.title}}</h4>
+                        <h4><span>Auther:</span> {{book.work.author_names}}</h4>
+                    </div>
+                </div>
+                
+                <div class="card-footer">
+                    <a routerLink="Details">More</a>
+                    <a routerLink="Wishlist">Wishlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+            </li>
+        </ul>
+    </nav>
+</div>
