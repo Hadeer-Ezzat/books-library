@@ -47,6 +47,18 @@ body {
             }
         }
     }
+    .books-subject {
+        margin-bottom: 1.5rem;
+        h3 {
+            color: $primary-color;
+            font-weight: bold;
+            text-transform: capitalize;
+            span {
+                color: $gray-color;
+                font-weight: 500;
+            }
+        }
+    }
     .book-card {
         padding: 1.5rem;
         height: 30vh;
@@ -58,6 +70,22 @@ body {
         .book-cover {
             width: 120px;
             height: 120px;
+            cursor: pointer;
+        }
+        .book-title {
+            cursor: pointer;
+        }
+        .img-placeholder {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+            font-size: 1.4rem;
+            background-color: #f9fafb;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
         }
         .card-content {
             margin: 0 1rem;

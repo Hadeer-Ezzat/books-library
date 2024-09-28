@@ -11,8 +11,8 @@ export class BooksService {
   constructor(private http: HttpClient) { }
 
   getBooks(): Observable<any[]> {
-    return this.http.get<any>('https://openlibrary.org/people/mekBot/books/want-to-read.json').pipe(
-      map(response => response.reading_log_entries)
+    return this.http.get<any>('https://openlibrary.org/subjects/finance.json').pipe(
+      map(response => response)
     );
   }
 }
