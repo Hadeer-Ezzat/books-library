@@ -1,20 +1,22 @@
 <div class="container">
-    <div class="book-title">
-        <h3><span>Title: </span></h3>
+    <div class="books-subject">
+        <h3><span>Title: </span>{{bookTitle}}</h3>
     </div>
     <div class="row">
-        <div class="col-lg-4 col-md-6 col-12">
-            <img class="book-cover img-fluid" src="" alt="cover">
+        <div class="col-lg-3 col-md-6 col-12">
+            <img class="book-cover img-fluid" 
+            src="https://covers.openlibrary.org/b/ID/{{coverImg}}-M.jpg" *ngIf="coverImg" alt="cover">
+            <img class="book-cover img-fluid" src="assets/images/product-not-found.png" *ngIf="!coverImg" alt="cover">
         </div>
-        <div class="col-lg-8 col-md-6 col-12">
-            <ul class="list-unstyled">
-                <li>First Published In: </li>
-                <li>Book Title: </li>
-                <li>Auther/s Name: </li>
-                <li>Edition Count: </li>
-                <li>No. Of Pages: </li>
+        <div class="col-lg-9 col-md-6 col-12">
+            <ul class="">
+                <li class="list-item py-3"><span>First Published In:</span> {{publishedIn}}</li>
+                <li class="list-item py-3"><span>Book Title:</span> {{bookTitle}}</li>
+                <li class="list-item py-3"><span>Auther/s Name:</span> {{autherName}}</li>
+                <li class="list-item py-3"><span>Edition Count:</span> {{editionCount}}</li>
+                <li class="list-item py-3"><span>No. Of Pages:</span> </li>
             </ul>
-            <button class="btn btn-primary">Add / Remove Wishlist</button>
+            <button class="btn btn-primary" (click)="addBook()">Add to Wishlist</button>
         </div>
     </div>
 </div>

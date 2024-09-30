@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   }
 
   detailsPage(index): void {
-    this.router.navigate(['Details'], { state: index });
+    this.router.navigate(['Details'], { queryParams: {index} });
   }
   autherDetails(id): void {
     this.router.navigate(['AutherDetails'], { queryParams: {id}});

@@ -9,6 +9,7 @@ import { BookDetailsComponent } from './components/book-details/book-details.com
 import { AutherDetailsComponent } from './components/auther-details/auther-details.component';
 import { SearchStoryComponent } from './components/search-story/search-story.component';
 import { WishlistStoryComponent } from './components/wishlist-story/wishlist-story.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WishlistStoryComponent } from './components/wishlist-story/wishlist-sto
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
