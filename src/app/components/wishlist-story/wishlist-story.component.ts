@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from '../../services/books.service';
 
 @Component({
   selector: 'app-wishlist-story',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WishlistStoryComponent implements OnInit {
 
-  constructor() { }
+  favoriteItems!: number[];
+  constructor(private booksService: BooksService) { }
 
   ngOnInit(): void {
+    this.favoriteItems = this.booksService.getFavorites();
   }
-
 }

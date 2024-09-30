@@ -1,1 +1,20 @@
-<p>auther-details works!</p>
+<div class="container">
+    <div class="books-subject">
+        <h3><span>Auther Name: </span>{{autherName}}</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+            <img class="auther-img img-fluid" *ngIf="imgKey" 
+            src="https://covers.openlibrary.org/b/id/{{imgKey}}-M.jpg" alt="cover">
+            <img class="auther-img img-fluid" *ngIf="!imgKey" src="assets/images/avatar_author-lg.png">
+        </div>
+        <div class="col-lg-9 col-md-6 col-12">
+            <ul class="">
+                <li class="py-3 list-item"><span>Date:</span> {{birthDate}}</li>
+                <li class="py-3 list-item"><span>Top Work:</span> {{topWork}}</li>
+                <li class="py-3 list-item"><span>Work Count:</span> {{workCount}}</li>
+                <li class="py-3 list-item"><span>Top Subjects:</span> {{topSubjects}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

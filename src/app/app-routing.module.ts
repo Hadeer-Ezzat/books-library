@@ -4,13 +4,15 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchStoryComponent } from './components/search-story/search-story.component';
 import { WishlistStoryComponent } from './components/wishlist-story/wishlist-story.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
+import { AutherDetailsComponent } from './components/auther-details/auther-details.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Search', component: SearchStoryComponent },
   { path: 'Wishlist', component: WishlistStoryComponent },
-  { path: 'Details', component: BookDetailsComponent }
+  { path: 'Details', component: BookDetailsComponent },
+  { path: 'AutherDetails', component: AutherDetailsComponent }
 ];
 
 @NgModule({

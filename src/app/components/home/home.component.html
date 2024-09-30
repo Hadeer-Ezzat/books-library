@@ -16,12 +16,12 @@
                     <div class="card-content">
                         <h4><span>Published In:</span> {{book.first_publish_year}}</h4>
                         <h4 (click)="detailsPage(i)" class="book-title"><span>Title:</span> {{book.title}}</h4>
-                        <h4><span>Auther:</span> {{book.authors[0].name}}</h4>
+                        <h4 (click)="autherDetails(i)" class="book-title"><span>Auther:</span> {{book.authors[0].name}}</h4>
                     </div>
                 </div>
                 
                 <div class="card-footer">
-                    <a routerLink="Details">More</a>
+                    <a (click)="detailsPage(i)">More</a>
                     <a routerLink="Wishlist">Wishlist</a>
                 </div>
             </div>

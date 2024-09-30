@@ -109,4 +109,41 @@ body {
             }
         }
     }
+    .form-control {
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+    .btn-outline-secondary, .dropdown-menu {
+        font-size: 1.6rem;
+    }
+    .no-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    .list-item {
+        color: $primary-color;
+        span {
+            color: $gray-color;
+        }
+    }
+    .btn-primary {
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 1.6rem;
+        padding: 0.5rem 2rem;
+        border: 1px solid $primary-color;
+    }
+    .btn-outline-secondary {
+        font-size: 1.6rem;
+        padding: 0.5rem 2rem;
+        border: 1px solid $primary-color;
+        margin: 0 1rem;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
 }
